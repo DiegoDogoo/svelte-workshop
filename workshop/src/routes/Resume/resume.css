@@ -1,0 +1,225 @@
+.resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.resume-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.resume-header p {
+    margin: 0 0 2rem 0;
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.download-section {
+    display: flex;
+    justify-content: center;
+}
+
+.download-btn {
+    background-color: white;
+    color: #667eea;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 1.2rem;
+}
+
+.resume-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.pdf-viewer {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+.pdf-placeholder {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border: 3px dashed #d1d5db;
+    border-radius: 12px;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #6b7280;
+}
+
+.pdf-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.pdf-placeholder p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.pdf-placeholder small {
+    display: block;
+    color: #9ca3af;
+}
+
+.experience-section,
+.education-section {
+    grid-column: span 1;
+}
+
+.experience-section h2,
+.education-section h2 {
+    color: #1f2937;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #667eea, #764ba2);
+    border-radius: 3px;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -10.5px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 4px solid #667eea;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 8px;
+    border-left: 3px solid #667eea;
+}
+
+.timeline-year {
+    color: #667eea;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.timeline-content h3 {
+    margin: 0.5rem 0;
+    color: #1f2937;
+}
+
+.company {
+    color: #764ba2;
+    font-weight: 600;
+    margin: 0.25rem 0 0.75rem 0;
+}
+
+.timeline-content p {
+    margin: 0.5rem 0;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.education-card {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    border-left: 5px solid #667eea;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.1);
+    transform: translateY(-4px);
+}
+
+.edu-year {
+    color: #667eea;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-card h3 {
+    margin: 0.5rem 0;
+    color: #1f2937;
+}
+
+.edu-school {
+    color: #764ba2;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.edu-description {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin: 0.5rem 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .resume-content {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-section,
+    .education-section {
+        grid-column: span 1;
+    }
+
+    .resume-header h1 {
+        font-size: 2rem;
+    }
+}
