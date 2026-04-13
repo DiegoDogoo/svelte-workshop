@@ -55,7 +55,7 @@
         <div class="download-section">
             <button
                 class="download-btn"
-                on:click={() => alert("Resume PDF would be downloaded here")}
+                onclick={() => alert("Resume PDF would be downloaded here")}
             >
                 <span class="icon">📥</span> Download PDF
             </button>
