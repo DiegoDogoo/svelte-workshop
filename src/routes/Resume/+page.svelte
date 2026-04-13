@@ -29,8 +29,8 @@
         {
             year: "2020",
             degree: "Bachelor of Science in Computer Science",
-            school: "State University",
-            description: "GPA: 3.8/4.0 | Honors with Distinction",
+            school: "University of Texas at El Paso",
+            description: "GPA: 3.9/4.0 | Dean's List 2018-2020",
         },
         {
             year: "2023",
@@ -52,25 +52,12 @@
             A testament to my strategic campaigns, conquered technologies, and
             expanded dominion across the digital frontier
         </p>
-        <div class="download-section">
-            <button
-                class="download-btn"
-                onclick={() => alert("Resume PDF would be downloaded here")}
-            >
-                <span class="icon">📥</span> Download PDF
-            </button>
-        </div>
     </div>
 
     <div class="resume-content">
         <div class="pdf-viewer">
-            <div class="pdf-placeholder">
-                <div class="pdf-icon">📄</div>
-                <p>Resume PDF Preview</p>
-                <small
-                    >PDF viewer integration can be added with pdfjs or iframe</small
-                >
-            </div>
+            <iframe src="/resume.pdf" width="100%" height="600px" title="Resume"
+            ></iframe>
         </div>
 
         <section class="experience-section">
